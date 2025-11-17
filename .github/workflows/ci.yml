@@ -1,0 +1,15 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y cmake ninja-build g++
+      - run: cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release && cmake --build build
+      - run: ./build/fxmm_tests
+      - name: synthetic-price pipeline (no data needed)
+        run: |
+          ./build/fxmm quotes --sigma 0.3 --gamma 0.02 --psi 0.15 --out ci_quotes.json
+          ./build/fxmm run --quoter HJB --diffusion --sigma 0.3 --horizon 7200 --out ci_run.json > /dev/null
+          ./build/fxmm frontier --diffusion --sigma 0.3 --horizon 3600 --seeds 2 --gammas 0.01,0.05 --quoters GLFT,HJB --out ci_frontier.json > /dev/null

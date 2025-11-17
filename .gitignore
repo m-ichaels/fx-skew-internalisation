@@ -1,0 +1,7 @@
+build/
+data/ticks/*.csv
+data/ticks/*.zip
+data/*.log
+third_party/
+results/run_*.json
+__pycache__/
