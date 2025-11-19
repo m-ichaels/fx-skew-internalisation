@@ -1,0 +1,89 @@
+[fxmm] solving AS
+[fxmm] solving GLFT
+[fxmm] solving QH
+[fxmm] solving QH_adverse
+[fxmm] solving HJB_2023
+[fxmm] solving HJB_noread
+[fxmm] solving HJB
+k = 3.285, gamma = 0.02, sigma = 0.3, H = 60.0: max |fxmm AS - mbt_gym AS| over q in [-Q, Q] = 4.60e-10 pips
+PASS
+[fxmm] AS gamma=0.005000: P&L $367643 +/- 107429, 1-min std $2027
+[fxmm] AS gamma=0.010000: P&L $298468 +/- 50888, 1-min std $1422
+[fxmm] AS gamma=0.020000: P&L $261649 +/- 45975, 1-min std $1103
+[fxmm] AS gamma=0.050000: P&L $156390 +/- 34209, 1-min std $851
+[fxmm] AS gamma=0.100000: P&L $95187 +/- 34186, 1-min std $801
+[fxmm] GLFT gamma=0.005000: P&L $275211 +/- 74111, 1-min std $1812
+[fxmm] GLFT gamma=0.010000: P&L $306298 +/- 67005, 1-min std $1427
+[fxmm] GLFT gamma=0.020000: P&L $310113 +/- 48015, 1-min std $1179
+[fxmm] GLFT gamma=0.050000: P&L $343061 +/- 31847, 1-min std $910
+[fxmm] GLFT gamma=0.100000: P&L $350276 +/- 33048, 1-min std $715
+[fxmm] QH_adverse gamma=0.005000: P&L $621433 +/- 57843, 1-min std $1723
+[fxmm] QH_adverse gamma=0.010000: P&L $607372 +/- 74026, 1-min std $1713
+[fxmm] QH_adverse gamma=0.020000: P&L $610077 +/- 73853, 1-min std $1685
+[fxmm] QH_adverse gamma=0.050000: P&L $602084 +/- 65908, 1-min std $1775
+[fxmm] QH_adverse gamma=0.100000: P&L $629468 +/- 50512, 1-min std $1558
+[fxmm] HJB_2023 gamma=0.005000: P&L $459557 +/- 47501, 1-min std $1219
+[fxmm] HJB_2023 gamma=0.010000: P&L $465428 +/- 31214, 1-min std $867
+[fxmm] HJB_2023 gamma=0.020000: P&L $490427 +/- 23785, 1-min std $649
+[fxmm] HJB_2023 gamma=0.050000: P&L $517538 +/- 15369, 1-min std $457
+[fxmm] HJB_2023 gamma=0.100000: P&L $520481 +/- 15300, 1-min std $363
+[fxmm] HJB gamma=0.005000: P&L $1831489 +/- 734389, 1-min std $4662
+[fxmm] HJB gamma=0.010000: P&L $617479 +/- 48759, 1-min std $1214
+[fxmm] HJB gamma=0.020000: P&L $535784 +/- 25386, 1-min std $601
+[fxmm] HJB gamma=0.050000: P&L $508239 +/- 21319, 1-min std $399
+[fxmm] HJB gamma=0.100000: P&L $491095 +/- 14019, 1-min std $324
+[fxmm] HJB_tox gamma=0.005000: P&L $2119587 +/- 798473, 1-min std $5385
+[fxmm] HJB_tox gamma=0.010000: P&L $666434 +/- 79935, 1-min std $1449
+[fxmm] HJB_tox gamma=0.020000: P&L $540576 +/- 19625, 1-min std $601
+[fxmm] HJB_tox gamma=0.050000: P&L $509160 +/- 17902, 1-min std $403
+[fxmm] HJB_tox gamma=0.100000: P&L $493575 +/- 19687, 1-min std $326
+[fxmm] HJB_nwz gamma=0.005000: P&L $3058151 +/- 1483288, 1-min std $7683
+[fxmm] HJB_nwz gamma=0.010000: P&L $560782 +/- 36684, 1-min std $1000
+[fxmm] HJB_nwz gamma=0.020000: P&L $513706 +/- 18743, 1-min std $687
+[fxmm] HJB_nwz gamma=0.050000: P&L $480467 +/- 21959, 1-min std $778
+[fxmm] HJB_nwz gamma=0.100000: P&L $448173 +/- 30549, 1-min std $829
+[fxmm] AS: before $132953 after $-120887
+[fxmm] GLFT: before $159975 after $-146626
+[fxmm] QH_adverse: before $310058 after $359683
+[fxmm] HJB_2023: before $240507 after $56063
+[fxmm] HJB: before $268617 after $233438
+[fxmm] HJB_tox: before $270059 after $246257
+[fxmm] HJB_nwz: before $260155 after $232383
+[fxmm] HJB_2023 latency 0 ms: $485586
+[fxmm] HJB latency 0 ms: $526805
+[fxmm] HJB_tox latency 0 ms: $543621
+[fxmm] HJB_2023 latency 50 ms: $497849
+[fxmm] HJB latency 50 ms: $538120
+[fxmm] HJB_tox latency 50 ms: $542429
+[fxmm] HJB_2023 latency 200 ms: $501347
+[fxmm] HJB latency 200 ms: $528183
+[fxmm] HJB_tox latency 200 ms: $539946
+[fxmm] HJB_2023 latency 1000 ms: $451307
+[fxmm] HJB latency 1000 ms: $519747
+[fxmm] HJB_tox latency 1000 ms: $531304
+[fxmm] HJB_2023 mu x0.000000: $615181
+[fxmm] HJB mu x0.000000: $549800
+[fxmm] HJB_tox mu x0.000000: $559485
+[fxmm] HJB_2023 mu x0.500000: $550383
+[fxmm] HJB mu x0.500000: $538302
+[fxmm] HJB_tox mu x0.500000: $548221
+[fxmm] HJB_2023 mu x1.000000: $485586
+[fxmm] HJB mu x1.000000: $526805
+[fxmm] HJB_tox mu x1.000000: $543621
+[fxmm] HJB_2023 mu x2.000000: $355990
+[fxmm] HJB mu x2.000000: $503811
+[fxmm] HJB_tox mu x2.000000: $519241
+[fxmm] HJB_2023 mu x4.000000: $96798
+[fxmm] HJB mu x4.000000: $457823
+[fxmm] HJB_tox mu x4.000000: $519823
+[fxmm] last look hold 0 ms tol 1000000000.000000: $526805 reject 0.000000
+[fxmm] last look hold 0 ms tol 0.500000: $526805 reject 0.000000
+[fxmm] last look hold 0 ms tol 0.200000: $526805 reject 0.000000
+[fxmm] last look hold 0 ms tol 0.100000: $526805 reject 0.000000
+[fxmm] last look hold 100 ms tol 0.200000: $530924 reject 0.015112
+[fxmm] last look hold 200 ms tol 0.200000: $512533 reject 0.030569
+TESTS PASSED: 39/39 checks
+figures written to results/figures
+written results\summary.md
+wrote report.pdf
+done
