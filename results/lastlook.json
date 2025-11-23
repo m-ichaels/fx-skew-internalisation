@@ -1,0 +1,56 @@
+[
+ {
+  "hold_ms": 0,
+  "tolerance_pips": -1,
+  "pnl_usd_mean": 526805.8067,
+  "pnl_usd_lo": 516738.3902,
+  "pnl_usd_hi": 537230.3391,
+  "rejection_rate": 0,
+  "accepted_markout_10s_client_favour": 0.008772518715
+ },
+ {
+  "hold_ms": 0,
+  "tolerance_pips": 0.5,
+  "pnl_usd_mean": 526805.8067,
+  "pnl_usd_lo": 516738.3902,
+  "pnl_usd_hi": 537230.3391,
+  "rejection_rate": 0,
+  "accepted_markout_10s_client_favour": 0.008772518715
+ },
+ {
+  "hold_ms": 0,
+  "tolerance_pips": 0.2,
+  "pnl_usd_mean": 526805.8067,
+  "pnl_usd_lo": 516738.3902,
+  "pnl_usd_hi": 537230.3391,
+  "rejection_rate": 0,
+  "accepted_markout_10s_client_favour": 0.008772518715
+ },
+ {
+  "hold_ms": 0,
+  "tolerance_pips": 0.1,
+  "pnl_usd_mean": 526805.8067,
+  "pnl_usd_lo": 516738.3902,
+  "pnl_usd_hi": 537230.3391,
+  "rejection_rate": 0,
+  "accepted_markout_10s_client_favour": 0.008772518715
+ },
+ {
+  "hold_ms": 100,
+  "tolerance_pips": 0.2,
+  "pnl_usd_mean": 530924.1922,
+  "pnl_usd_lo": 517750.1894,
+  "pnl_usd_hi": 546411.5936,
+  "rejection_rate": 0.01511175999,
+  "accepted_markout_10s_client_favour": 0.01051927295
+ },
+ {
+  "hold_ms": 200,
+  "tolerance_pips": 0.2,
+  "pnl_usd_mean": 512533.4806,
+  "pnl_usd_lo": 499931.8146,
+  "pnl_usd_hi": 522030.2833,
+  "rejection_rate": 0.03056863182,
+  "accepted_markout_10s_client_favour": 0.01217703759
+ }
+]

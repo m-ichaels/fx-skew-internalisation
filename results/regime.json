@@ -1,0 +1,76 @@
+{
+ "cells": [
+  {
+   "quoter": "AS",
+   "pnl_before_usd": 132953.5269,
+   "pnl_before_lo": 118662.2609,
+   "pnl_before_hi": 146856.0587,
+   "pnl_after_usd": -120887.1968,
+   "pnl_after_lo": -137859.2022,
+   "pnl_after_hi": -104713.0171,
+   "survives": false
+  },
+  {
+   "quoter": "GLFT",
+   "pnl_before_usd": 159975.0201,
+   "pnl_before_lo": 145941.1238,
+   "pnl_before_hi": 174941.851,
+   "pnl_after_usd": -146626.8077,
+   "pnl_after_lo": -168553.9716,
+   "pnl_after_hi": -122291.559,
+   "survives": false
+  },
+  {
+   "quoter": "QH_adverse",
+   "pnl_before_usd": 310058.0155,
+   "pnl_before_lo": 289083.4163,
+   "pnl_before_hi": 331439.6436,
+   "pnl_after_usd": 359683.0812,
+   "pnl_after_lo": 337932.789,
+   "pnl_after_hi": 380284.1817,
+   "survives": true
+  },
+  {
+   "quoter": "HJB_2023",
+   "pnl_before_usd": 240507.4826,
+   "pnl_before_lo": 229927.6286,
+   "pnl_before_hi": 250897.5628,
+   "pnl_after_usd": 56063.12253,
+   "pnl_after_lo": 42994.98416,
+   "pnl_after_hi": 69667.45311,
+   "survives": true
+  },
+  {
+   "quoter": "HJB",
+   "pnl_before_usd": 268617.5245,
+   "pnl_before_lo": 261786.9354,
+   "pnl_before_hi": 275029.5058,
+   "pnl_after_usd": 233438.15,
+   "pnl_after_lo": 224309.5239,
+   "pnl_after_hi": 242998.1129,
+   "survives": true
+  },
+  {
+   "quoter": "HJB_tox",
+   "pnl_before_usd": 270059.5584,
+   "pnl_before_lo": 264927.8335,
+   "pnl_before_hi": 275740.3322,
+   "pnl_after_usd": 246257.3834,
+   "pnl_after_lo": 236938.4067,
+   "pnl_after_hi": 256311.2085,
+   "survives": true
+  },
+  {
+   "quoter": "HJB_nwz",
+   "pnl_before_usd": 260155.1894,
+   "pnl_before_lo": 254444.3861,
+   "pnl_before_hi": 265327.4283,
+   "pnl_after_usd": 232383.6107,
+   "pnl_after_lo": 223272.5033,
+   "pnl_after_hi": 241781.6832,
+   "survives": true
+  }
+ ],
+ "lambda_mult": 1,
+ "mu_mult": 4
+}
