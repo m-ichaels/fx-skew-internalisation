@@ -4,4 +4,6 @@ data/ticks/*.zip
 data/*.log
 third_party/
 results/run_*.json
+!results/run_HJB.json
+!results/run_HJB_2023.json
 __pycache__/

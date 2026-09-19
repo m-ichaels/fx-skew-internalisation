@@ -1,5 +1,5 @@
 # Configure + build with MSVC (Visual Studio Build Tools) and Ninja.
-# Usage:  .\build.ps1 [-Target lobsim_cli|fixgw|known_answer_tests|all] [-Config Release|Debug]
+# Usage:  .\build.ps1 [-Target fxmm_cli|fxmm_tests|all] [-Config Release|Debug]
 param([string]$Target = "all", [string]$Config = "Release")
 $ErrorActionPreference = "Stop"
 $vs = Get-ChildItem "C:\Program Files*\Microsoft Visual Studio\*\*\VC\Auxiliary\Build\vcvars64.bat" -ErrorAction SilentlyContinue | Select-Object -First 1

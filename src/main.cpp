@@ -41,7 +41,7 @@ static MarketParams market_from(const Args& a, const TickSeries* ticks) {
 }
 static ClientConfig clients_from(const Args& a) { return a.has("config") ? ClientConfig::load(a.get("config")) : ClientConfig::defaults(); }
 
-// Quoter factory. Names: AS, GLFT, QH, QH_adverse, HJB, HJB_noadv, HJB_noread, HJB_nohedge, HJB_tox (HJB + toxicity routing),
+// Quoter factory. Names: AS, GLFT, QH, QH_adverse, HJB, HJB_2023 (no adverse selection, no readers), HJB_noadv, HJB_noread, HJB_nohedge, HJB_tox (HJB + toxicity routing),
 // HJB_nwz (HJB + anticipatory hedging), HJB_ll (HJB + last look).  The suffix variants share the HJB policy and switch SimConfig flags.
 static std::unique_ptr<Quoter> make_quoter(const std::string& name, const ClientConfig& c, MarketParams mp) {
     if (name == "AS") return std::make_unique<ASQuoter>(c, mp);
@@ -92,7 +92,7 @@ static int cmd_quotes(const Args& a) {
     for (auto& n : names) {
         logmsg("solving " + n);
         auto qt = make_quoter(n, c, mp);
-        Json e = Json::object(); e["quoter"] = qt->name(); Json rows = Json::array();
+        Json e = Json::object(); e["quoter"] = n; Json rows = Json::array();
         Ladder L; L.resize(c);
         for (double q = -mp.Q; q <= mp.Q + 1e-9; q += 1.0) {
             qt->quote(q, L); Json r = Json::object(); r["q"] = q; r["hedge"] = qt->hedge(q);

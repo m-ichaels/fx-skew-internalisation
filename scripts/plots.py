@@ -15,7 +15,7 @@ os.makedirs(F, exist_ok=True)
 plt.rcParams.update({"figure.dpi": 130, "font.size": 9, "axes.grid": True, "grid.alpha": 0.3})
 LABEL = {"AS": "Avellaneda-Stoikov", "GLFT": "GLFT closed form", "QH": "quadratic-Hamiltonian", "QH_adverse": "QH + adverse selection",
          "HJB_2023": "BBG 2023 (numerical)", "HJB_noread": "+ adverse selection", "HJB": "+ adverse selection + price reading",
-         "HJB_tox": "HJB + toxicity routing", "HJB_nwz": "HJB + anticipatory hedging", "HJB_noadv_noread": "BBG 2023 (numerical)", "HJB_noadv": "readers only"}
+         "HJB_tox": "HJB + toxicity routing", "HJB_nwz": "HJB + anticipatory hedging", "HJB_noadv": "readers only"}
 
 
 def load(n):
@@ -31,7 +31,7 @@ def fig_quotes():
     fig, ax = plt.subplots(1, 3, figsize=(13, 3.8))
     want = ["HJB_2023", "HJB_noread", "HJB", "QH", "GLFT"]
     for name in want:
-        e = next((x for x in q["quoters"] if x["quoter"] == name or (name == "HJB_2023" and x["quoter"] == "HJB_noadv_noread")), None)
+        e = next((x for x in q["quoters"] if x["quoter"] == name), None)
         if not e: continue
         qs = [r["q"] for r in e["rows"]]
         ax[0].plot(qs, [r["bid"][0] for r in e["rows"]], label=LABEL.get(name, name))
