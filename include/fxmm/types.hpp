@@ -1,7 +1,6 @@
 #pragma once
 // Core integer types. Prices are integer ticks, quantities integer lots, times ns since epoch.
-// Working in integers is deliberate: the replay must be bit-for-bit deterministic and the
-// known-answer tests compare exact fills.
+// Working in integers is deliberate: simulations must be bit-for-bit deterministic across runs and seeds.
 #include <cstdint>
 #include <string>
 #include <vector>
