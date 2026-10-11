@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Full pipeline: ticks -> quoters -> experiments -> figures -> summary -> report.  Usage: scripts/run_all.sh
+# Full pipeline: ticks -> quoters -> experiments -> figures -> summary.  Usage: scripts/run_all.sh
 set -euo pipefail
 B=./build/fxmm
 DAYS=data/ticks/EURUSD_2025-04-14.csv,data/ticks/EURUSD_2025-04-15.csv,data/ticks/EURUSD_2025-04-16.csv,data/ticks/EURUSD_2025-04-17.csv
@@ -17,5 +17,4 @@ $B lastlook --ticks $DAYS --psi $PSI --seeds 3 --out results/lastlook.json > /de
 ./build/fxmm_tests | tee results/tests.txt
 python scripts/plots.py results results/figures
 python scripts/summarize.py results
-python scripts/report.py results report.pdf
 echo done
