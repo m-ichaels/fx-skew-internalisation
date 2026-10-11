@@ -1,6 +1,6 @@
 # fx-skew-internalisation
 
-A C++20 FX dealer simulator that solves the dealer's quoting and hedging problem when some clients are informed, some read the dealer's skew, and hedging on the interbank venue has impact. It uses real EURUSD ticks for 14–17 April 2025 as the reference price and a calibrated simulation for the client flow.
+A C++ FX dealer simulator that solves the dealer's quoting and hedging problem when some clients are informed, some read the dealer's skew, and hedging on the interbank venue has impact. It uses real EURUSD ticks for 14–17 April 2025 as the reference price and a calibrated simulation for the client flow.
 
 The question: how should a dealer skew and hedge when clients are informed or read the skew, and what does the 2025 extension of Barzykin–Bergault–Guéant add over their 2023 model?
 
